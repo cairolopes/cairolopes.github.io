@@ -96,6 +96,23 @@ body{
     -webkit-box-shadow: 0 0 20px rgb(48,46,77,0.15);
     box-shadow: 0 0 20px rgb(48,46,77,0.15);
 }
+.btn{
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    padding: 12px 35px;
+    color: #ffffff;
+    border-radius: 40px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: inline-block;
+    white-space: nowrap;
+
+}
+.btn:hover{
+    -webkit-transform:scale(1.05) ;
+    transform: scale(1.05);
+}
 .hidden{
     display: none!important;
 }
@@ -284,7 +301,6 @@ body{
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
 
-
 }
 /* About Section */
 
@@ -321,9 +337,6 @@ body{
     max-width: 60%;
     margin-top: 40px;
    
-
-
-
 }
 .about .about-content .personal-info .info-item{
     /* background-color: red; */
@@ -346,10 +359,53 @@ body{
     margin-left: 4px;
     display: inline-block;
 }
+.about .about-content .personal-info .buttons{
+    margin-top: 30px;
+}
+.about .about-content .personal-info .buttons .btn{
+    margin-right: 15px;
+    margin-top: 10px;
+}
 .about .about-content .skills{
     /* background-color:blue; */
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
+}
+.about .about-content .skills .skill-item{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+.about .about-content .skills .skill-item h5{  
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #302e4d;
+    text-transform: capitalize;
+    margin: 0;
+   
+}
+.about .about-content .skills .skill-item .progress{
+    background-color: #e3e3e3;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item{
+    margin-bottom: 30px ;
+}
+.about .about-content .skills .skill-item .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+}
+.about .about-content .skills .skill-item .skill-percent{
+    /* display: none; */
 }
